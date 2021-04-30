@@ -1,0 +1,70 @@
+.js-greeting {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.js-greeting__innerBox{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+
+}
+.js-greeting__innerBox form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.js-greeting__innerBox input{
+    text-align: center;
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 10px 0px;
+    color: rgba(0,0,0,0.5);
+    transition: all 1s ease-in-out;
+}
+.js-greeting__innerBox input:focus{
+    outline: none;
+    border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+.js-greeting__innerBox input::placeholder{
+    color: rgba(0,0,0,0.3);
+}
+.js-greeting__innerBox p {
+    font-weight: 700;
+    font-size: 48px;
+    margin-top: 80px;
+}
+.first__column{position: relative;
+    margin-top: 50px;
+}
+.savedUser{
+    z-index: 1;
+    position: absolute;
+    top:50px;
+    margin: 10px 0px 0px 70px ;
+    padding: 20px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: flex-start;
+    font-size: 70px;
+    font-weight: 700;
+}
+.savedUserShadow{
+    z-index: 0;
+    position: absolute;
+    top:140px;
+    left: 235px;
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    transform: skewX(-50deg);
+    
+}

@@ -1,1 +1,12 @@
 @import "./reset.css";
+@import "./greeting.css";
+
+
+body{
+    background-color: whitesmokes;
+    width: 100vw;
+    height: 100vh;
+}
+.none{
+    display: none;
+}
