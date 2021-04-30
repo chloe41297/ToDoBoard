@@ -1,11 +1,30 @@
 @import "./reset.css";
 @import "./greeting.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&display=swap');
 
 body{
     background-color: whitesmokes;
+    font-family: 'Inconsolata';
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: flex-start;
+    align-items: center;
+}
+:root{
+    --main--blue:#4285f3;
+    --main--red:#ea4435;
+    --main--yellow:#fbbd04;
+    --main--green:#33a852;
+}
+.first__column{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: flex-start;
+    align-items: center;
 }
 .none{
     display: none;

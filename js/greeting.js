@@ -3,15 +3,17 @@ const greetingFrom = greetingBox.querySelector("form");
 const greetingInput = greetingFrom.querySelector("input");
 const greetingText = greetingBox.querySelector(".greetingText");
 const savedUser = document.querySelector(".savedUser");
-const saveUserShadow = document.querySelector(".savedUserShadow");
+const firstColumn = document.querySelector(".first__column");
+
 
 function loadUserName(){
     const loadedUser = localStorage.getItem("User");
     if( loadedUser !== null ){
-        savedUser.innerText = `Hello. \n ${loadedUser}`;
+        savedUser.innerText = `${loadedUser}`;
         savedUser.classList.remove("none");
-        saveUserShadow.classList.remove("none");
+       
     }else{
+        firstColumn.classList.add("none");
         greetingBox.classList.remove("none");
     }
     
@@ -27,6 +29,7 @@ function handleGreeting(event){
     saveUserName(currentValue);
     loadUserName(currentValue);
     greetingBox.classList.add("none");
+    firstColumn.classList.remove("none");
 }
 
 function init(){

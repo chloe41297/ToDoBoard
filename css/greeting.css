@@ -1,6 +1,4 @@
 .js-greeting {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,31 +38,109 @@
     font-size: 48px;
     margin-top: 80px;
 }
-.first__column{position: relative;
-    margin-top: 50px;
-}
+
 .savedUser{
-    z-index: 1;
-    position: absolute;
-    top:50px;
-    margin: 10px 0px 0px 70px ;
-    padding: 20px;
-    background-color: burlywood;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     text-align: flex-start;
-    font-size: 70px;
+    font-size: 90px;
     font-weight: 700;
 }
-.savedUserShadow{
-    z-index: 0;
-    position: absolute;
-    top:140px;
-    left: 235px;
-    background-color: black;
-    width: 200px;
-    height: 100px;
-    transform: skewX(-50deg);
+.hello{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: flex-start;
+    font-size: 90px;
+    font-weight: 700;
     
+}
+.hello p {
+    transition: all 1s ease-out;
+}
+.dot {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: -60px;
+    left: -30px;
+}
+.dot1{
+    background-color: var(--main--blue);
+    visibility: hidden;
+}
+.dot2{
+    background-color: var(--main--red);
+    visibility: hidden;
+}
+.dot3{
+    background-color: var(--main--yellow);
+    visibility: hidden;
+}
+.dot4{
+    background-color: var(--main--green);
+    visibility: hidden;
+}
+.dot5{
+    background-color: var(--main--red);
+    visibility: hidden;
+}
+.dot6{
+    background-color: var(--main--blue);
+    visibility: hidden;
+}
+
+
+@keyframes dotMovement{
+    0%{
+        visibility: hidden;
+        transform: translateY(0px);
+    }
+    50%{
+        visibility: visible;
+        transform: translateY(-30px);
+    }
+    100%{
+        visibility: visible;
+        transform: translateY(20px);
+    }
+
+}
+#first:hover{
+    color:var(--main--blue);
+}
+#first:hover ~ .dot1{
+    animation: dotMovement 1s ease-in-out forwards;
+}
+#second:hover{
+    color:var(--main--red);
+}
+#second:hover ~ .dot2{
+    animation: dotMovement 1s ease-in-out forwards;
+}
+#third:hover{
+    color:var(--main--yellow);
+}
+#third:hover ~ .dot3{
+    animation: dotMovement 1s ease-in-out forwards;
+}
+#forth:hover{
+    color:var(--main--green);
+}
+#forth:hover ~ .dot4{
+    animation: dotMovement 1s ease-in-out forwards;
+}
+#fifth:hover{
+    color:var(--main--red);
+}
+#fifth:hover ~ .dot5{
+    animation: dotMovement 1s ease-in-out forwards;
+}
+#sixth:hover{
+    color:var(--main--blue);
+}
+#sixth:hover ~ .dot6{
+    animation: dotMovement 1s ease-in-out forwards;
 }
