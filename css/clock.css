@@ -1,0 +1,36 @@
+.clockHour{
+    font-size: 100px;
+    margin: 10px;
+    transition: all 0.8s ease-out;
+}
+.clockMin{
+    font-size: 100px;
+    margin: 10px;
+    transition: all 0.8s ease-out;
+}
+.clockSec{
+    font-size: 50px;
+    position: relative;
+    top: 20px;
+    margin: 10px;
+    transition: all 0.8s ease-out;
+}
+.clockAmPm{
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+    margin: 10px;
+    transition: all 0.8s ease-out;
+}
+.clockAmPm:hover{
+    color: var(--main--red);
+}
+.clockHour:hover{
+    color: var(--main--blue);
+}
+.clockMin:hover{
+    color: var(--main--yellow);
+}
+.clockSec:hover{
+    color: var(--main--green);
+}

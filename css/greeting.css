@@ -57,7 +57,7 @@
     
 }
 .hello p {
-    transition: all 1s ease-out;
+    transition: all 0.8s ease-out;
 }
 .dot {
     position: relative;
@@ -91,7 +91,6 @@
     background-color: var(--main--blue);
     visibility: hidden;
 }
-
 
 @keyframes dotMovement{
     0%{
@@ -143,4 +142,7 @@
 }
 #sixth:hover ~ .dot6{
     animation: dotMovement 1s ease-in-out forwards;
+}
+.savedUser:hover > #first{
+    color: var(--main--blue);
 }

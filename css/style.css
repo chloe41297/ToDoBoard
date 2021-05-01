@@ -1,11 +1,12 @@
 @import "./reset.css";
 @import "./greeting.css";
+@import "./clock.css";
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&display=swap');
 
 body{
     background-color: whitesmokes;
     font-family: 'Inconsolata';
-    width: 100vw;
+    width: 200vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,6 +20,14 @@ body{
     --main--green:#33a852;
 }
 .first__column{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: flex-start;
+    align-items: center;
+}
+.js-clock{
     width: 100vw;
     height: 100vh;
     display: flex;
