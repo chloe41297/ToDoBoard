@@ -1,0 +1,14 @@
+.js-weather{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.weather__temp{
+    font-size: 50px;
+}
+.weatherImage{
+    margin-right: 20px;
+}
