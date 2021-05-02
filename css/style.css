@@ -2,12 +2,13 @@
 @import "./greeting.css";
 @import "./clock.css";
 @import "./img.css";
+@import "./todo.css";
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&display=swap');
 
 body{
     background-color: whitesmokes;
     font-family: 'Inconsolata';
-    width: 300vw;
+    width: 400vw;
     height: 100vh;
     display: flex;
     justify-content: center;
