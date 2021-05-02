@@ -3,23 +3,28 @@
 @import "./clock.css";
 @import "./img.css";
 @import "./todo.css";
+@import "./weather.css";
+@import "./scroll.css";
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&display=swap');
 
 body{
     background-color: whitesmokes;
     font-family: 'Inconsolata';
-    width: 400vw;
+    width: 500vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     text-align: flex-start;
     align-items: center;
+    transition: all 1s ease-in-out;
+    
 }
 :root{
     --main--blue:#4285f3;
     --main--red:#ea4435;
     --main--yellow:#fbbd04;
     --main--green:#33a852;
+    scroll-behavior: smooth;
 }
 .first__column{
     width: 100vw;

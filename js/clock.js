@@ -9,7 +9,7 @@ function handleTime(){
     const MIN = NOW.getMinutes();
     const SEC = NOW.getSeconds();
     jsAmPm.innerText = `${HOURS < 12 ? `am`:`pm`}`
-    jsHour.innerText = `${HOURS < 10 ? HOURS > 12 ?  ` 0${HOURS}`: ` ${HOURS}` : `${HOURS-12 < 10 ? `0${HOURS-12}` : `${HOURS-12}`}`}`;
+    jsHour.innerText = `${HOURS < 10 ?  ` 0${HOURS}`: ` ${HOURS}` }`;
     jsMin.innerText = `${MIN < 10 ? `0${MIN}` : MIN}`;
     jsSec.innerText = `${SEC < 10 ? `0${SEC}` : SEC}`;
 

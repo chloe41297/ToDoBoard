@@ -102,47 +102,11 @@
         transform: translateY(-30px);
     }
     100%{
-        visibility: visible;
+        visibility: hidden;
         transform: translateY(20px);
     }
 
 }
-#first:hover{
-    color:var(--main--blue);
-}
-#first:hover ~ .dot1{
-    animation: dotMovement 1s ease-in-out forwards;
-}
-#second:hover{
-    color:var(--main--red);
-}
-#second:hover ~ .dot2{
-    animation: dotMovement 1s ease-in-out forwards;
-}
-#third:hover{
-    color:var(--main--yellow);
-}
-#third:hover ~ .dot3{
-    animation: dotMovement 1s ease-in-out forwards;
-}
-#forth:hover{
-    color:var(--main--green);
-}
-#forth:hover ~ .dot4{
-    animation: dotMovement 1s ease-in-out forwards;
-}
-#fifth:hover{
-    color:var(--main--red);
-}
-#fifth:hover ~ .dot5{
-    animation: dotMovement 1s ease-in-out forwards;
-}
-#sixth:hover{
-    color:var(--main--blue);
-}
-#sixth:hover ~ .dot6{
-    animation: dotMovement 1s ease-in-out forwards;
-}
-.savedUser:hover > #first{
-    color: var(--main--blue);
-}
+
+
+

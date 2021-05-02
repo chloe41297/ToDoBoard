@@ -1,0 +1,31 @@
+.scroll{
+    position: fixed;
+    left: 40vw;
+    bottom: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.3);
+    margin: 20px;
+}
+
+.nav__dot1:hover{
+    background-color: var(--main--blue);
+}
+.nav__dot2:hover{
+    background-color: var(--main--red);
+}
+.nav__dot3:hover{
+    background-color: var(--main--yellow);
+}
+.nav__dot4:hover{
+    background-color: var(--main--green);
+}
+.nav__dot5:hover{
+    background-color: var(--main--blue);
+}
