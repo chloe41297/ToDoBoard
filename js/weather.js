@@ -2,7 +2,7 @@
 const weatherInfo = document.querySelector(".weather__temp");
 const weatherImg = document.querySelector(".weather__icon");
 const COORDS = 'coords';
-const API_KEY = config.API_KEY;
+const API_KEY = "YOUR_API_KEY";//write your openweather API KEY
 
 
 function getWeather(lat,lng){
@@ -16,7 +16,8 @@ function getWeather(lat,lng){
         const weatherState = json.weather[0].description;
 		const place = json.sys.country;
 		weatherInfo.innerText = `${weatherState}\n${temperature}℃`;
-
+		
+		
 		
 		const image = new Image();
 		image.src = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
@@ -43,6 +44,7 @@ function handleGeoSucces(position){
 }
 function handleGeoError(){
 	alert("can't access geoInfo");
+	
 }
 function askForCoords(){
 	navigator.geolocation.getCurrentPosition(handleGeoSucces, handleGeoError);
@@ -60,7 +62,7 @@ function loadCoords(){
 }
 
 function init(){
-    
+    weatherInfo.innerText=`Use your API KEY!!:)`//Then erase it please :)
 	loadCoords();
 }
 init();

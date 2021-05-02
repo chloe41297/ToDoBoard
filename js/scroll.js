@@ -21,12 +21,21 @@ function handleNav5(){
     window.scrollTo(5800,0);
 }
 
+function handleScroll(){
+    
+    if(window.scrollX <1000){
+        nav1.style.color="var(--main--blue)";
+        
+    }
+}
+
 function init(){
    nav1.addEventListener("click",handleNav1);
    nav2.addEventListener("click",handleNav2);
    nav3.addEventListener("click",handleNav3);
    nav4.addEventListener("click",handleNav4);
    nav5.addEventListener("click",handleNav5);
-   
+   handleScroll();
+   console.log(window.scrollX);
 }
 init();
