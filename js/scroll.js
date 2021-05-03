@@ -4,7 +4,7 @@ const nav3 = document.querySelector(".nav__dot3");
 const nav4 = document.querySelector(".nav__dot4");
 const nav5 = document.querySelector(".nav__dot5");
 const SCROLL = document.querySelector(".scroll");
-const windowSize = window.innerWidth;
+let windowSize = window.innerWidth;
 
 function handleNav1(){
     window.scrollTo(0,0);
